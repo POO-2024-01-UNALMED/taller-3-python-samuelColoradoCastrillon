@@ -1,6 +1,6 @@
 class TV:
     # Atributos
-    _numTV = 0
+    numTV = 0
 
     # Constructor
     def __init__(self, marca, estado):
@@ -33,9 +33,9 @@ class TV:
     def setControl(self, control):
         self.control = control
     def getNumTV(self):
-        return self._numTV
-    def setNumTV(self, _numTV):
-        self._numTV = _numTV
+        return self.numTV
+    def setNumTV(self, numTV):
+        self.numTV = numTV
     def getEstado(self):
         return self.estado
     def turnOn(self):
@@ -48,9 +48,15 @@ class TV:
     def canalDown(self):
         if self.canal > 1 and self.estado:
             self.canal -= 1
+    def setCanal(self, canal):
+        if canal >= 1 and canal <= 120 and self.estado:
+            self.canal = canal
     def volumenUp(self):
         if self.volumen < 7 and self.estado:
             self.volumen += 1
     def volumenDown(self):
         if self.volumen > 0 and self.estado:
             self.volumen -= 1
+    def setVolumen(self, volumen):
+        if volumen >= 0 and volumen <= 7 and self.estado:
+            self.volumen = volumen
