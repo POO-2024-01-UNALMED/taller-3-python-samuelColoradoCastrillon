@@ -10,6 +10,7 @@ class TV:
         self.precio = 500
         self.volumen = 1
         self.control = None
+        self.increaseNumTV()
 
     # Métodos
     def getMarca(self):
@@ -38,6 +39,9 @@ class TV:
     @classmethod
     def setNumTV(cls, _numTV):
         cls.numTV = _numTV
+    @classmethod
+    def increaseNumTV(cls):
+        cls._numTV += 1
     def getEstado(self):
         return self.estado
     def turnOn(self):
