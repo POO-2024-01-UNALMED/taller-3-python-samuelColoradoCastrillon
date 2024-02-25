@@ -1,6 +1,6 @@
 class TV:
     # Atributos
-    numTV = 0
+    _numTV = 0
 
     # Constructor
     def __init__(self, marca, estado):
@@ -10,6 +10,7 @@ class TV:
         self.precio = 500
         self.volumen = 1
         self.control = None
+        _numTV += 1
 
     # Métodos
     def getMarca(self):
@@ -34,10 +35,10 @@ class TV:
         self.control = control
     @classmethod
     def getNumTV(cls):
-        return cls.numTV
+        return cls._numTV
     @classmethod
-    def setNumTV(cls, numTV):
-        cls.numTV = numTV
+    def setNumTV(cls, _numTV):
+        cls.numTV = _numTV
     def getEstado(self):
         return self.estado
     def turnOn(self):
