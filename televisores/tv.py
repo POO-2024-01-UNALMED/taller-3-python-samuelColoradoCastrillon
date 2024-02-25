@@ -36,7 +36,7 @@ class TV:
     def getNumTV():
         return TV._numTV
     def setNumTV(_numTV):
-        TV.numTV = _numTV
+        TV._numTV = _numTV
     @classmethod
     def increaseNumTV(cls):
         cls._numTV += 1
