@@ -1,5 +1,3 @@
-from marca import Marca
-from control import Control
 class TV:
     # Atributos
     _numTV = 0

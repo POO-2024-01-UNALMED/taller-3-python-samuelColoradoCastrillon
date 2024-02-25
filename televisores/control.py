@@ -1,7 +1,7 @@
 class Control:
     # Constructor
-    def __init__(self, tv):
-        self.tv = tv
+    def __init__(self):
+        self.tv = None
     
     #Métodos
     def turnOn(self, estado):
