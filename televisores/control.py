@@ -4,9 +4,9 @@ class Control:
         self.tv = None
     
     #Métodos
-    def turnOn(self, estado):
+    def turnOn(self):
         self.tv.estado = True
-    def turnOff(self, estado):
+    def turnOff(self):
         self.tv.estado = False
     def canalUp(self):
         if self.tv.canal < 120 and self.tv.estado:

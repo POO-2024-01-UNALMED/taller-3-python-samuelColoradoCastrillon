@@ -32,15 +32,15 @@ class TV:
         return self.control
     def setControl(self, control):
         self.control = control
-    def getTV(self):
-        return self.marca
-    def setTV(self, _numTV):
+    def getNumTV(self):
+        return self._numTV
+    def setNumTV(self, _numTV):
         self._numTV = _numTV
     def getEstado(self):
         return self.estado
-    def turnOn(self, estado):
+    def turnOn(self):
         self.estado = True
-    def turnOff(self, estado):
+    def turnOff(self):
         self.estado = False
     def canalUp(self):
         if self.canal < 120 and self.estado:
