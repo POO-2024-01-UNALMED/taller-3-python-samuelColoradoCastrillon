@@ -35,10 +35,10 @@ class TV:
         self.control = control
     @classmethod
     def getNumTV(cls):
-        return cls._numTV
+        return TV._numTV
     @classmethod
     def setNumTV(cls, _numTV):
-        cls.numTV = _numTV
+        TV.numTV = _numTV
     @classmethod
     def increaseNumTV(cls):
         cls._numTV += 1
